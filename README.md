@@ -1,52 +1,88 @@
 📝 Soru Bankası Projesi
-Bu proje, React.js ve .NET Core kullanılarak geliştirilmiş bir soru bankası sistemidir. Öğretmenlerin sınav ekleme, silme, sınav listelerini ve sınav detaylarını görüntüleme işlemlerini yapabilmesini sağlar. Ayrıca, öğrencinin üzerine tıklayarak hangi sınavlara girdiği ve doğru-yanlış sayısını görüntüleyebilirler. Proje PostgreSQL veritabanı kullanılarak geliştirilmiştir ve code-first migration'lar oluşturulmuştur.
+🧠 Kullanılan Teknolojiler
 
-✨ Özellikler
-🖊️ Öğretmenler için sınav ekleme ve silme işlemleri
-📋 Sınav listesini görüntüleme
-🔍 Sınav detaylarını görüntüleme
-📊 Öğrenci performansını görüntüleme (girdiği sınavlar ve doğru-yanlış sayıları)
-💻 Teknolojiler
-Frontend: React.js
-Backend: .NET Core
-Veritabanı: PostgreSQL
-ORM: Entity Framework Core (Code-First)
-🚀 Kurulum
-Gereksinimler
-.NET Core SDK
-Node.js ve npm
+Frontend
+
+React.js
+
+React Router
+
+Axios
+
+Component-based architecture
+
+Backend
+
+.NET Core (ASP.NET Core Web API)
+
+Entity Framework Core — Code-First
+
+Repository & Service Layer
+
+DTO & Validation Mantığı
+
+Veritabanı
+
 PostgreSQL
-Adımlar
-Backend'i Kurun:
 
-Proje dizinine gidin ve aşağıdaki komutla bağımlılıkları yükleyin:
-bash
-Kodu kopyala
-dotnet restore
-Veritabanını oluşturmak için migration'ları uygulayın:
-bash
-Kodu kopyala
-dotnet ef database update
-Backend'i başlatın:
-bash
-Kodu kopyala
-dotnet run
-Frontend'i Kurun:
+Diğer
 
-client-app dizinine gidin ve bağımlılıkları yükleyin:
-bash
-Kodu kopyala
-npm install
-Frontend'i başlatın:
-bash
-Kodu kopyala
-npm start
-📚 Kullanım
-Öğretmenler, sisteme giriş yaparak sınav ekleyebilir, silebilir ve mevcut sınavları görüntüleyebilir.
-Öğrencinin üzerine tıklayarak, öğrencinin girdiği sınavları ve doğru-yanlış sayılarını görüntüleyebilirsiniz.
-🤝 Katkıda Bulunma
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya bir issue açın.
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya bir issue açın.
+RESTful API
+
+LINQ
+
+Migration yönetimi
+
+Asenkron programlama (async/await)
+
+📌 Proje Özeti
+
+Bu proje, öğretmenlerin sınav ve öğrenci performans verilerini yönetmesini sağlayan bir Soru Bankası Yönetim Sistemidir.
+React.js ile geliştirilen frontend, .NET Core API ile haberleşerek PostgreSQL üzerinde verileri yönetir.
+
+🚀 Özellikler
+👩‍🏫 Öğretmen Paneli
+
+🖊️ Sınav ekleme
+
+❌ Sınav silme
+
+📋 Sınav listesini görüntüleme
+
+🔍 Sınav detaylarını inceleme
+
+🎯 Öğrenci Performansı
+
+Öğrencinin girdiği sınavları görüntüleme
+
+Doğru — yanlış sayılarını listeleme
+
+🗄 Mimari
+
+Backend → Çok Katmanlı Mimari
+
+API Layer
+
+Business Layer
+
+DataAccess Layer
+
+Entity Layer
+
+EF Core Code-First ile:
+
+Migration oluşturma
+
+PostgreSQL üzerinde şema üretimi
+
+⚙️ Kurulum
+📌 Gereksinimler
+
+.NET Core SDK
+
+Node.js & npm
+
+PostgreSQL
 <img width="1431" alt="Ekran Resmi 2024-06-27 11 17 29" src="https://github.com/ipeknroztrk/SoruBank/assets/114228895/67b60820-d3f0-4203-a15c-b4e0443ecf58">
 <img width="1436" alt="Ekran Resmi 2024-06-27 11 17 40" src="https://github.com/ipeknroztrk/SoruBank/assets/114228895/fe42a289-b6df-44c6-8eac-40fb3eb9a69a">
 <img width="1425" alt="Ekran Resmi 2024-06-27 11 17 52" src="https://github.com/ipeknroztrk/SoruBank/assets/114228895/e683585c-4981-4e29-9eb5-fefc0c72398d">
